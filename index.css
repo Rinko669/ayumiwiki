@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* start progress bar */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column; /* Added to stack elements vertically */
+}
+
+#gif-container {
+    margin-bottom: 20px; /* Adjust the spacing between the gif and progress bar */
+}
+
+#progress-bar {
+    width: 90%;
+    height: 20px;
+    background: #555;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#bar {
+    height: 100%;
+    width: 0;
+    background: #4caf50;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+ .text {
+    font-size: 40px;
+}
+/* end progress bar css */
+
+
+/*  start gif running match to progress bar */
+.rotated {
+    animation: moveLeftToRight 5s linear infinite; /* Adjust the duration as needed */
+}
+
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(calc(-600% + -100px)); /* Adjust the value as needed */
+    }
+    100% {
+        transform: translateX(calc(410% + 100%)); /* Adjust the value as needed */
+    }
+}
+/* gif running match to progress bar end */
