@@ -33,7 +33,7 @@ body {
 }
 
 #progress-bar {
-    width: 90%;
+    width: 80%;
     height: 20px;
     background: #555;
     border-radius: 10px;
@@ -58,17 +58,18 @@ body {
 .rotated {
     animation: moveLeftToRight 5s linear infinite; /* Adjust the duration as needed */
 }
-
 @keyframes moveLeftToRight {
     0% {
-        transform: translateX(calc(-600% + -100px)); /* Adjust the value as needed */
+        transform: translateX(calc(-700% + -10px)); /* Adjust the value as needed */
     }
     100% {
-        transform: translateX(calc(410% + 100%)); /* Adjust the value as needed */
+        transform: translateX(calc(450% + 10vw)); /* Adjust the value as needed */
     }
 }
-/* gif running match to progress bar end */
 
+
+/* gif running match to progress bar end */
+@media screen and (max-width: 600px) {
 @keyframes moveLeftToRight {
     0% {
         transform: translateX(calc(-200% + -10vw)); /* Adjust the value as needed */
@@ -77,4 +78,9 @@ body {
         transform: translateX(calc(100% + 10vw)); /* Adjust the value as needed */
     }
 }
+}
 /* end */
+
+/* start navbar css */
+
+/*end*/
