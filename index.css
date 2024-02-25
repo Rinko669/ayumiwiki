@@ -68,3 +68,13 @@ body {
     }
 }
 /* gif running match to progress bar end */
+
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(calc(-200% + -10vw)); /* Adjust the value as needed */
+    }
+    100% {
+        transform: translateX(calc(100% + 10vw)); /* Adjust the value as needed */
+    }
+}
+/* end */
